@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Device Security Posture Tracker</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; color: #222; }
+  h1 { color: #0B7285; }
+  .subtitle { color: #666; margin-bottom: 24px; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #eee; }
+  th { color: #0B7285; }
+  a { color: #0B7285; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: bold; color: white; }
+  .critical { background: #c0392b; }
+  .high { background: #e67e22; }
+  .medium { background: #f1c40f; color: #333; }
+  .low { background: #27ae60; }
+  .unknown { background: #95a5a6; }
+  .user-tag { color: #999; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+  <h1>Device Security Posture Tracker</h1>
+  <p class="subtitle">Demo Organization &middot; signed in as <span class="user-tag">{{ user }}</span></p>
+
+  <table>
+    <tr><th>Device</th><th>OS</th><th>Risk Level</th></tr>
+    {% for d in devices %}
+    <tr>
+      <td><a href="/device/{{ d.id }}">{{ d.name }}</a></td>
+      <td>{{ d.os }}</td>
+      <td><span class="badge {{ d.risk_level }}">{{ d.risk_level|upper }}</span></td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
