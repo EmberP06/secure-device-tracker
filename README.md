@@ -15,7 +15,8 @@ https://device-tracker.mangodesert-45af2103.eastus2.azurecontainerapps.io
 
 ## Video walkthrough
 
-https://github.com/EmberP06/secure-device-tracker/raw/main/demo.mp4
+https://github.com/user-attachments/assets/1fe52246-6221-4d86-9ec0-784509695dea
+
 
 ## Features
 
