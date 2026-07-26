@@ -12,7 +12,12 @@ deployment.
 
 ## Demo
 
-https://github.com/EmberP06/secure-device-tracker/raw/main/demo.mp4
+
+https://github.com/user-attachments/assets/a8c60804-10d4-484c-92d9-2838fde16bf1
+
+
+
+
 
 ## Features
 
